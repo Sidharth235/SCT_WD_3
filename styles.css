@@ -1,0 +1,73 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5dc; /* beige */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #001f3f; /* navy */
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 5px;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: #001f3f; /* navy */
+  border: 2px solid #ccc;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  color: #f5f5dc; /* beige text */
+}
+
+.cell:hover {
+  background: #003366; /* lighter navy on hover */
+}
+
+.status {
+  font-size: 1.2rem;
+  margin: 15px;
+  color: #001f3f; /* navy */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #001f3f;
+  color: #f5f5dc;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #003366;
+}
+
+.mode-toggle {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #001f3f;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
